@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Menentukan bahasa dokumen adalah bahasa Inggris -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Menentukan karakter encoding untuk dokumen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Memastikan tampilan halaman yang responsif di berbagai perangkat -->
+    <title>Login</title> <!-- Judul halaman yang muncul di tab browser -->
+    <link rel="stylesheet" href="../css/login.css"> <!-- Menghubungkan halaman dengan file CSS eksternal untuk gaya halaman login -->
+</head>
+
+<body>
+    <header>
+        <h1>Monde News</h1> <!-- Judul utama situs di bagian header -->
+    </header>
+
+    <div class="container"> <!-- Kontainer utama untuk form login dan registrasi -->
+        <!-- Form login -->
+        <div class="form-container active" id="login-form"> <!-- Kontainer untuk form login dengan kelas 'active' -->
+            <h2>Login</h2> <!-- Judul form login -->
+            <form>
+                <label for="login-username">Username</label> <!-- Label untuk input username -->
+                <input type="text" id="login-username" required> <!-- Input field untuk username dengan ID 'login-username' -->
+                <label for="login-password">Password</label> <!-- Label untuk input password -->
+                <input type="password" id="login-password" required> <!-- Input field untuk password dengan ID 'login-password' -->
+                <button type="submit">Login</button> <!-- Tombol untuk mengirim form login -->
+                <p>Belum punya akun? <a href="#" id="show-register">Daftar</a></p> <!-- Tautan untuk beralih ke form registrasi -->
+            </form>
+        </div>
+
+        <!-- Form registrasi -->
+        <div class="form-container" id="register-form"> <!-- Kontainer untuk form registrasi -->
+            <h2>Registrasi</h2> <!-- Judul form registrasi -->
+            <form>
+                <label for="register-username">Username</label> <!-- Label untuk input username -->
+                <input type="text" id="register-username" required> <!-- Input field untuk username dengan ID 'register-username' -->
+                <label for="register-password">Password</label> <!-- Label untuk input password -->
+                <input type="password" id="register-password" required> <!-- Input field untuk password dengan ID 'register-password' -->
+                <label for="register-email">Email</label> <!-- Label untuk input email -->
+                <input type="email" id="register-email" required> <!-- Input field untuk email dengan ID 'register-email' -->
+                <button type="submit">Daftar</button> <!-- Tombol untuk mengirim form registrasi -->
+                <p>Sudah punya akun? <a href="#" id="show-login">Login</a></p> <!-- Tautan untuk beralih ke form login -->
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-content"> <!-- Kontainer untuk konten footer -->
+            <div id="about"><a href="/html/about.html">About Me</a></div> <!-- Tautan ke halaman 'About Me' -->
+        </div>
+        <div id="copyright">
+            <p>© Dwi Wahyu 2024. Seluruh hak cipta.</p> <!-- Informasi hak cipta untuk situs -->
+        </div>
+    </footer>
+
+    <script src="../javascript/login.js"></script> <!-- Menambahkan file JavaScript eksternal untuk menangani logika interaksi pada halaman login -->
+</body>
+
+</html>

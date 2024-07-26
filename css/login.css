@@ -1,0 +1,185 @@
+    /* unutk halaman body*/
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #987070;
+    }
+
+    /* untuk bagian headernya atau di tempat judul */
+    header {
+        position: sticky;
+        /* Menjaga header di atas saat menggulir */
+        margin: 5px;
+        /* Menambahkan margin di sekitar header */
+        padding: 20px;
+        /* Menambahkan padding di dalam header */
+        top: 0;
+        /* Memposisikan header di bagian atas */
+        height: 50px;
+        /* Menetapkan tinggi header */
+        width: auto;
+        /* Menetapkan lebar header menjadi otomatis */
+        background-color: #DBB5B5;
+        /* Menetapkan warna latar belakang header */
+        border-radius: 5px;
+        /* Membulatkan sudut-sudut header */
+    }
+
+    /*untuk bagian class container*/
+    .container {
+        background-color: #DBB5B5;
+        /* Menetapkan warna latar belakang kontainer */
+        padding: 40px;
+        /* Menambahkan padding di dalam kontainer */
+        margin: auto;
+        /* Memposisikan kontainer di tengah secara horizontal */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Menambahkan bayangan lembut ke kontainer */
+        border-radius: 5px;
+        /* Membulatkan sudut-sudut kontainer */
+        width: 300px;
+        /* Menetapkan lebar kontainer */
+        text-align: center;
+        /* Menengahkan teks di dalam kontainer */
+    }
+
+    /*untuk bagian pembungkus dari login*/
+    .form-container {
+        display: none;
+        /* Menyembunyikan form-container secara default */
+    }
+
+    /*untuk bagian di form-container tetapi masuk ke active*/
+    .form-container.active {
+        display: block;
+        /* Menampilkan form-container saat memiliki kelas "active" */
+    }
+
+    /*unutk bgaian h2 yang login dan registrasi*/
+    h2 {
+        margin-bottom: 20px;
+        /* Menambahkan margin di bawah elemen h2 */
+    }
+
+    /*unutk bagaian semua label yang di dalam body*/
+    label {
+        display: block;
+        /* Menampilkan label sebagai blok */
+        text-align: left;
+        /* Menyelaraskan teks label ke kiri */
+        margin-bottom: 5px;
+        /* Menambahkan margin di bawah label */
+    }
+
+    /*untuk semua bagian input yang ada di dalam body*/
+    input {
+        width: 100%;
+        /* Menetapkan lebar input sebesar 100% dari elemen induknya */
+        padding: 8px;
+        /* Menambahkan padding di dalam input */
+        margin-bottom: 15px;
+        /* Menambahkan margin di bawah input */
+        border: 1px solid #ccc;
+        /* Menetapkan border input dengan warna abu-abu */
+        border-radius: 4px;
+        /* Membulatkan sudut-sudut input */
+    }
+
+    /*untuk bagian button submit login dan daftar*/
+    button {
+        width: 100%;
+        /* Menetapkan lebar tombol sebesar 100% dari elemen induknya */
+        padding: 10px;
+        /* Menambahkan padding di dalam tombol */
+        background-color: #987070;
+        /* Menetapkan warna latar belakang tombol */
+        border: none;
+        /* Menghapus border tombol */
+        color: white;
+        /* Menetapkan warna teks tombol */
+        border-radius: 4px;
+        /* Membulatkan sudut-sudut tombol */
+        cursor: pointer;
+        /* Mengubah kursor menjadi pointer saat berada di atas tombol */
+    }
+
+    /*merubah warna ketika kursor mengarah ke button*/
+    button:hover {
+        background-color: #c98b8b;
+        /* Menetapkan warna latar belakang tombol saat hover */
+    }
+
+    /*link pada from*/
+    a {
+        color: #c98b8b;
+        /* Menetapkan warna teks untuk link */
+        cursor: pointer;
+        /* Mengubah kursor menjadi pointer saat berada di atas link */
+        text-decoration: none;
+        /* Menghapus garis bawah dari link */
+    }
+
+    /*berubah garis bawah jika kursor mengarah ke link*/
+    a:hover {
+        text-decoration: underline;
+        /* Menambahkan garis bawah pada link saat hover */
+    }
+
+    /*untuk di pembungkus id footer-content dan id copyright*/
+    footer {
+        background-color: #DBB5B5;
+        /* Menetapkan warna latar belakang footer */
+        height: 45px;
+        /* Menetapkan tinggi footer */
+        width: auto;
+        /* Menetapkan lebar footer menjadi otomatis */
+        margin: 10px;
+        /* Menambahkan margin di sekitar footer */
+        padding: 20px;
+        /* Menambahkan padding di dalam footer */
+        border-radius: 5px;
+        /* Membulatkan sudut-sudut footer */
+    }
+
+    /*untuk mengatur id footer-contet yang di bungkus footer dan membungkus login*/
+    #footer-content {
+        display: flex;
+        /* Menggunakan layout flexbox untuk konten footer */
+        justify-content: space-around;
+        /* Membiarkan item-item footer melanjutkan ke baris berikutnya */
+        flex-wrap: wrap;
+        /* Mendistrisikan ruang di sekitar item-item footer */
+        background-color: #987070;
+        /* Menetapkan warna latar belakang konten footer */
+        padding: 8px;
+        /* Menambahkan padding di dalam konten footer */
+        border-radius: 5px;
+        /* Membulatkan sudut-sudut konten footer */
+    }
+
+    /*menuju ke bagian dalam dari footer-contet ke link nya */
+    #footer-content a {
+        margin: 5px;
+        /* Menambahkan margin di sekitar link footer */
+        color: #F1E5D1;
+        /* Menetapkan warna link footer */
+        text-decoration: none;
+        /* Menghapus garis bawah dari link footer */
+        font-weight: bold;
+        /* Menjadikan link footer tebal */
+    }
+
+    /*unutuk mengatur id copyright yang terbungkus footer*/
+    #copyright {
+        color: black;
+        /* Menetapkan warna teks untuk bagian copyright */
+        border-radius: 1px;
+        /* Membulatkan sedikit sudut-sudut bagian copyright */
+        font-size: 12px;
+        /* Menetapkan ukuran font untuk teks copyright */
+        background-color: #DBB5B5;
+        /* Menetapkan warna latar belakang bagian copyright */
+        box-shadow: 0px 0px 0px 1px;
+        /* Menambahkan bayangan seperti garis batas ke bagian copyright */
+        text-align: center;
+        /* Menengahkan teks di dalam bagian copyright */
+    }

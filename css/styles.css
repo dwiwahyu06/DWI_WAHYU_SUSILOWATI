@@ -1,0 +1,176 @@
+ /* Mengatur tampilan umum dari body halaman */
+body {
+    font-family: Arial, sans-serif; /* Mengatur jenis font untuk seluruh halaman */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+    background-color: #987070; /* Mengatur warna latar belakang halaman */
+}
+
+/* Mengatur gaya untuk kontainer berita */
+#news-container {
+    max-width: 100%; /* Memastikan lebar maksimum kontainer adalah 100% dari lebar elemen induk */
+    margin: 5px; /* Memberikan jarak luar 5px */
+    background-color: #DBB5B5; /* Mengatur warna latar belakang kontainer berita */
+    padding: 8px; /* Memberikan padding internal 8px */
+    border-radius: 8px; /* Membuat sudut-sudut kontainer melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan pada kontainer */
+    display: grid; /* Mengatur kontainer menggunakan grid layout */
+}
+
+/* Mengatur gaya untuk konten berita */
+#news-content {
+    font-family: monospace; /* Mengatur jenis font untuk konten berita */
+    word-wrap: break-word; /* Memastikan kata-kata yang terlalu panjang akan dibungkus */
+    display: grid; /* Mengatur konten menggunakan grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Membuat grid dengan 3 kolom yang sama lebar */
+    gap: 14px; /* Memberikan jarak antar item dalam grid */
+    background-color: #987070; /* Mengatur warna latar belakang konten berita */
+    border-radius: 5px; /* Membuat sudut-sudut konten melengkung */
+}
+
+/* Mengatur gaya untuk header */
+header {
+    position: sticky; /* Membuat header tetap berada di posisi atas saat scroll */
+    margin: 5px; /* Memberikan jarak luar 5px */
+    padding: 20px; /* Memberikan padding internal 20px */
+    top: 0; /* Menempatkan header di posisi atas */
+    height: 50px; /* Mengatur tinggi header */
+    width: auto; /* Lebar otomatis mengikuti konten */
+    background-color: #DBB5B5; /* Mengatur warna latar belakang header */
+    border-radius: 5px; /* Membuat sudut-sudut header melengkung */
+}
+
+/* Mengatur gaya untuk link dalam kategori 1 */
+#kategori1 a {
+    background-color: #987070; /* Mengatur warna latar belakang link */
+    padding: 23px; /* Memberikan padding internal 23px */
+    border-radius: 5px; /* Membuat sudut-sudut link melengkung */
+    margin-left: 20px; /* Memberikan jarak kiri 20px */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    font-weight: bold; /* Menebalkan teks link */
+}
+
+/* Mengatur gaya untuk kategori berita */
+#kategori-news {
+    width: auto; /* Lebar otomatis mengikuti konten */
+    margin: 5px; /* Memberikan jarak luar 5px */
+    background-color: #DBB5B5; /* Mengatur warna latar belakang kategori berita */
+    padding: 30px; /* Memberikan padding internal 30px */
+    border-radius: 5px; /* Membuat sudut-sudut kategori berita melengkung */
+    display: flex; /* Mengatur kategori berita menggunakan flexbox */
+}
+
+/* Mengatur gaya untuk kotak berita */
+.box {
+    background-color: #F1E5D1; /* Mengatur warna latar belakang kotak berita */
+    width: 320px; /* Mengatur lebar kotak berita */
+    height: 400px; /* Mengatur tinggi kotak berita */
+    margin: 20px; /* Memberikan jarak luar 20px */
+    padding: 10px; /* Memberikan padding internal 10px */
+    border-radius: 5px; /* Membuat sudut-sudut kotak berita melengkung */
+}
+
+/* Mengatur gaya untuk gambar dalam berita */
+.images {
+    width: 320px; /* Mengatur lebar gambar */
+    border-radius: 5px; /* Membuat sudut-sudut gambar melengkung */
+    margin:auto /* Memberikan jarak kiri 10px */
+}
+
+/* Mengatur gaya untuk footer */
+footer {
+    background-color: #DBB5B5; /* Mengatur warna latar belakang footer */
+    height: 45px; /* Mengatur tinggi footer */
+    width: auto; /* Lebar otomatis mengikuti konten */
+    margin: 10px; /* Memberikan jarak luar 10px */
+    padding: 20px; /* Memberikan padding internal 20px */
+    border-radius: 5px; /* Membuat sudut-sudut footer melengkung */
+}
+
+/* Mengatur gaya untuk link umum */
+a {
+    margin-left: 5px; /* Memberikan jarak kiri 5px */
+    border: none; /* Menghilangkan border default pada link */
+    background-color: #987070; /* Mengatur warna latar belakang link */
+    color: #F1E5D1; /* Mengatur warna teks link */
+}
+
+/* Mengatur gaya untuk halaman */
+#page {
+    margin-left: 466px; /* Memberikan jarak kiri 466px */
+}
+
+/* Mengatur gaya untuk link dalam halaman */
+#page a {
+    background-color: #987070; /* Mengatur warna latar belakang link dalam halaman */
+    padding: 23px; /* Memberikan padding internal 23px */
+    border-radius: 5px; /* Membuat sudut-sudut link melengkung */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    font-weight: bold; /* Menebalkan teks link */
+}
+
+/* Mengatur gaya untuk konten footer */
+#footer-content {
+    display: flex; /* Mengatur konten footer menggunakan flexbox */
+    justify-content: space-around; /* Menyebar konten secara merata */
+    flex-wrap: wrap; /* Membungkus konten ke baris baru jika diperlukan */
+    background-color: #987070; /* Mengatur warna latar belakang konten footer */
+    padding: 8px; /* Memberikan padding internal 8px */
+    border-radius: 5px; /* Membuat sudut-sudut konten footer melengkung */
+}
+
+/* Mengatur gaya untuk link dalam konten footer */
+#footer-content a {
+    margin: 5px; /* Memberikan jarak luar 5px pada link */
+    color: #F1E5D1; /* Mengatur warna teks link */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    font-weight: bold; /* Menebalkan teks link */
+}
+
+/* Mengatur gaya untuk copyright */
+#copyright {
+    color: black; /* Mengatur warna teks copyright */
+    border-radius: 1px; /* Membuat sudut-sudut copyright melengkung */
+    font-size: 12px; /* Mengatur ukuran font copyright */
+    background-color: #DBB5B5; /* Mengatur warna latar belakang copyright */
+    box-shadow: 0px 0px 0px 1px; /* Menambahkan efek bayangan pada copyright */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+}
+
+/* Mengatur tampilan responsif untuk layar dengan lebar maksimum 1024px */
+@media only screen and (max-width: 1024px) {
+    #news-content {
+        grid-template-columns: repeat(2, 1fr); /* Mengubah grid menjadi 2 kolom */
+    }
+    #page {
+        margin-left: 0; /* Menghilangkan jarak kiri pada halaman */
+    }
+    #page a {
+        margin-left: 30px; /* Memberikan jarak kiri 30px pada link dalam halaman */
+    }
+}
+
+/* Mengatur tampilan responsif untuk layar dengan lebar maksimum 640px */
+@media only screen and (max-width: 640px) {
+    #kategori-news {
+        display: flex; /* Mengatur kategori berita menggunakan flexbox */
+        flex-direction: column; /* Menata item secara vertikal */
+        gap: 5px; /* Memberikan jarak antar item */
+    }
+    #kategori1 {
+        display: flex; /* Mengatur kategori 1 menggunakan flexbox */
+        flex-direction: column; /* Menata item secara vertikal */
+        gap: 5px; /* Memberikan jarak antar item */
+    }
+    #page {
+        display: flex; /* Mengatur halaman menggunakan flexbox */
+        flex-direction: column; /* Menata item secara vertikal */
+        gap: 5px; /* Memberikan jarak antar item */
+    }
+    #news-content {
+        grid-template-columns: repeat(1, 1fr); /* Mengubah grid menjadi 1 kolom */
+    }
+    .box {
+        margin: 0; /* Menghilangkan jarak luar pada kotak berita */
+    }
+}
